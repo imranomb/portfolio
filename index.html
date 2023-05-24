@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class='container section hero_section'>
+            <div class='navbar'>
+                <div class="social_media">
+                    <i class="fa-brands fa-facebook icon" style="color: #000000;"></i>
+                    <i class="fa-brands fa-instagram icon" style="color: #000000;"></i>
+                    <i class="fa-brands fa-linkedin icon" style="color: #000000;"></i>
+                </div>
+                <div class="nav_menu">
+                    <a href="#about_section">ABOUT</a>
+                    <a href="#projects_section">PROJECTS</a>
+                </div>
+                <button>CONTACT</button>
+            </div>
+            <div class="container section" id="home_section">
+                <div class="row h-100 d-flex align-items-center justify-items-center">
+                    <div class="col-md-6 col-sm-12">
+                        <h2 class='ime'>Imran <br/> Omerbasic</h2>
+                        <p>Fullstack Web Developer sa znanjem na polju HTML, CSS, JS, REACT</p>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="right">
+                            <img src='imso.webp' class='profile_picture'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='container section' id="about_section">
+            <div class="row h-100 d-flex align-items-center justify-items-center">
+                <div class="col-md-6 kolona">
+                    <h2 class="text-center">EDUKACIJA</h2>
+                    <div class="education d-flex justify-content-center">
+                      <table>
+                        <tr>
+                          <td>Škola</td>
+                          <td>Početak</td>
+                          <td>Kraj</td>
+                        </tr>
+                        <tr>
+                          <td><a class='skola' data-color=#1e90ff href='https://msst.edu.ba'>MSŠ Tešanj</a></td>
+                          <td>2018</td>
+                          <td>2022</td>
+                        </tr>
+                        <tr>
+                          <td><a class='skola' data-color=#ff0000 href='https://it-akademija.com'>IT Akademija</a></td>
+                          <td>2022</td>
+                          <td>?</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="col-md-6 kolona">
+                    <h2>O MENI</h2>
+                    <p>Rođen sam 2003. godine u Tešnju, zanimanje prema računarima sam stekao u ranom djetinstvu, zbog toga sam poslije završetka osnovne škole, upisao smjer elektrotehničar-računarstva u Mješovitoj Srednjoj Školi Tešanj. Tu sam se upoznao sa programskim jezikom C++ i radom u Visual Basic-u. I ako u školi web development nije bio pretjerano zastupljen, odlučio sam da budem samouk web developer, ali sam nakon zavšetka srednje škole ipak upisao IT Akademiju, kako bi stekao dodatno iskustvo. Slobodno vrijeme provodim sa društvom, gledajući fudbal, čitajuči knjige i povremeno igrajući video igre.</p>
+                  </div>
+                  <div class="hobi">
+                    <i class="fa-solid fa-futbol hobi_item" style="color: #005eff;" data-url="https://www.youtube.com/watch?v=DMSlx1F0Fok&t=1s&ab_channel=DeniProductions"></i>
+                    <i class="fa-solid fa-book hobi_item" style="color: #005eff;" data-url="https://www.goodreads.com/user/show/166003792-imran-omerba-i"></i>
+                    <i class="fa-solid fa-user-group hobi_item" style="color: #005eff;" data-url="https://www.instagram.com/imranomb/"></i>
+                    <i class="fa-solid fa-film hobi_item" style="color: #005eff;" data-url="https://letterboxd.com/imranomb/"></i>
+                    <i class="fa-solid fa-gamepad hobi_item" style="color: #005eff;" data-url="https://steamcommunity.com/id/d00bix/"></i>
+                    <i class="fa-solid fa-code hobi_item" style="color: #005eff;" data-url="https://github.com/imranomb"></i>
+                  </div>
+                </div>
+            </div>
+            <div class="container section" id="projects_section">
+                <div class="row h-100 d-flex align-items-center justify-items-center">
+                    <div class="col-md-12">
+                        <div class="project d-flex flex-column align-items-center justify-content-center">
+                            <img src="public/proj_1.png" id="project_img"/>
+                            <div id="project_info">
+                                <h2>ER Zanat</h2>
+                                <p>ER Zanat je projekat rađen za SZR koristeći HTML, CSS, JS I Bootstrap.</p>
+                            </div>
+                            <i class="fa-solid fa-arrow-right arrows" style="color: #000000;"></i>
+                            <i class="fa-solid fa-arrow-left arrows" style="color: #000000;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container section" id="contact_section">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="my_contact">
+                            <div class="contact_item">
+                                <i class="fa-solid fa-phone" style="color: #000000;"></i>
+                                <h4>061 - 864 - 037</h4>
+                            </div>
+                            <div class="contact_item">
+                                <i class="fa-solid fa-envelope" style="color: #000000;"></i>
+                                <h4>imran2017omerbasic@hotmail.com</h4>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="contact_info">
+                              <div class="ime_prezime">
+                                <input type='text' placeholder='Name'/>
+                                <input type='text' placeholder='Last Name'/>
+                              </div>
+                              <input type='mail' placeholder='Mail'/>
+                              <input type='textarea' placeholder='Message...' class="message"/>
+                            </div>
+                            <button class='submit'>Sumbit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="https://kit.fontawesome.com/ca1129a0e5.js" crossorigin="anonymous"></script>  
+    <script src="index.js"></script>
+</body>
+</html>

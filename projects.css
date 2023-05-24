@@ -1,0 +1,69 @@
+#projects_section
+{
+  scroll-snap-align: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Monttserat";
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+}
+.project 
+{
+    position: relative;
+    gap: 20px;
+}
+#project_img
+{
+    aspect-ratio: 16/9;
+    width: 90%;
+    height: 90%;
+    filter: drop-shadow(5px 5px 10px #000);
+    border-radius: 7px;
+}
+.arrows 
+{
+    position: absolute;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.arrows:hover 
+{
+    scale: 1.2;
+    transition: all 0.3s ease;
+}
+.fa-arrow-right
+{
+    right: -5%;
+    top: 50%;
+}
+.fa-arrow-left
+{
+    left: -5%;
+    top: 50%;
+}
+.blur_anim
+{
+    animation: blur_anim 1.5s forwards;
+}
+@keyframes blur_anim 
+{
+    0%
+    {
+        filter: blur(0px);
+        width: 100%;
+    }
+    50%
+    {
+        filter: blur(7px);
+        width: 0%;
+    }
+    100%
+    {
+        filter: blur(0px);
+        width: 100%;
+    }
+}

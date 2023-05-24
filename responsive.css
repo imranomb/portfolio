@@ -1,0 +1,55 @@
+@media screen and (max-width: 767px)
+{
+    .navbar
+    {
+        display: none;
+    }
+    .home_row
+    {
+        flex-direction: column-reverse;
+    }
+    #home_section
+    {
+      scroll-snap-align: center;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .right 
+    {
+        width: 100%;
+        display: grid;
+        place-content: center;
+    }
+    .profile_picture
+    {
+        aspect-ratio: 350/350;
+        width: 350px;
+        height: 350px;
+    }
+    .right::after
+    {
+        width: 100%;
+        display: none;
+    }
+    .fa-arrow-right
+    {
+        position: absolute;
+        right: 50%;
+        top: -50%;
+        rotate: 90deg;
+    }
+    .fa-arrow-left
+    {
+        left: 50%;
+        bottom: -50%;
+        rotate: 90deg;
+    }
+    #contact_section
+    {
+        display: none;
+    }
+}

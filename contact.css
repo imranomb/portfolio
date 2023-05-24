@@ -1,0 +1,115 @@
+#contact_section
+{
+  scroll-snap-align: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Monttserat";
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+}
+.contact_info
+{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form 
+{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.submit 
+{
+  z-index: 2;
+  position: relative;
+  padding: 10px;
+  border-radius: 3%;
+  font-size: 1.1rem;
+  border: 1px solid black;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.submit::after
+{
+  content: "";
+  border-radius: 3%;
+  background-color: black;
+  width: 0%;
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+}
+.submit:hover::after
+{
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.submit::before
+{
+  z-index: -2;
+  opacity: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #1e1e1f38;
+  transform: translate(0px, 0px);
+  transition: all 0.3s ease;
+}
+.submit:hover::before
+{
+  opacity: 1;
+  transform: translate(9px, 9px);
+  transition: all 0.3s ease;
+}
+.submit:hover 
+{
+  transition: all 0.3s ease;
+  color: azure;
+}
+form input
+{
+    padding: 20px;
+    border-radius: 7px;
+    z-index: 999;
+}
+.message 
+{
+    height: 150px;
+}
+.my_contact
+{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.contact_item
+{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 7px;
+    text-align: center;
+}
+.contact_item i 
+{
+    font-size: 1.5rem;
+}
+.contact_item h4 
+{
+    padding-top: 3px;
+    font-size: 1rem;
+}
