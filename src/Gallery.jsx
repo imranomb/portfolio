@@ -10,7 +10,7 @@ export default function Gallery()
     
         useEffect(() => {
             // Učitavamo citate iz JSON fajla
-            fetch('/src/assets/gallery.json')
+            fetch('./gallery.json')
             .then((res) => res.json())
             .then((data) => setPhotos(data));
         }, []);
