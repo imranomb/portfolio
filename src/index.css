@@ -1,0 +1,59 @@
+@import "tailwindcss";
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.example::-webkit-scrollbar {
+  display: none;
+}
+.letter {
+  display: inline-block;
+  opacity: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  transform: scale(0.5);
+  animation: popup 0.3s ease forwards;
+}
+
+@keyframes popup {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@layer components 
+{
+  .selectionbutton {
+    @apply !p-5 text-center bg-blue-950 text-white font-bold  hover:bg-white hover:text-black duration-300 ease-in cursor-pointer;
+  }
+}
+@layer utilities
+{
+  .masked-element {
+    -webkit-mask-image: url('./ddd.svg');
+    mask-image: url('./ddd.svg');
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: center;
+  }
+  .things_border
+  {
+    clip-path: polygon(0% 7%, 2% 7%, 2% 0%, 98% 0%, 98% 7%, 100% 7%, 100% 93%, 98% 93%, 98% 100%, 2% 100%, 2% 93%, 0% 93%);
+  }
+  .x_button
+  {
+    clip-path: polygon(8% 0, 91% 1%, 94% 100%, 11% 100%);
+  }
+}
+#gallery_bg
+{
+  transition: 300ms;
+}
+.blured
+{
+  filter: blur(5px);
+  transition: 300ms;
+}

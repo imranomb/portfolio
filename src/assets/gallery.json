@@ -1,0 +1,58 @@
+[
+    {
+        "id": 0,
+        "src": "./gallery/slika_0.webp",
+        "path": "slika_0.jpeg",
+        "title": "mali ja",
+        "desc": "fotografisano nekada davno"
+    },
+    {
+        "id": 1,
+        "src": "./gallery/slika_1.webp",
+        "title": "veliki ja",
+        "path": "slika_1.jpg",
+        "desc": "fotografisano na Kurban Bajram 2024. godine"
+    },
+    {
+        "id": 2,
+        "src": "./gallery/slika_4.webp",
+        "path": "slika_4.jpeg",
+        "title": "L <3",
+        "desc": "muzej optičke iluzije, Sarajevo, 2025 godina"
+    },
+    {
+        "id": 3,
+        "src": "./gallery/slika_5.webp",
+        "path": "slika_5.jpeg",
+        "title": "shisha",
+        "desc": "vagabundo, mjesto gdje se ide bar 2x sedmično"
+    },
+    {
+        "id": 4,
+        "src": "./gallery/slika_6.webp",
+        "path": "slika_6.jpeg",
+        "title": "teretana",
+        "desc": "dok sam pod pumpom"
+    },
+    {
+        "id": 5,
+        "src": "./gallery/slika_8.webp",
+        "path": "slika_8.jpeg",
+        "title": "drip",
+        "desc": "Kurban Bajram 2025. godine"
+    },
+    {
+        "id": 6,
+        "src": "./gallery/slika_7.webp",
+        "path": "slika_7.png",
+        "title": "kosa",
+        "desc": "ovdje me šišao Enćo"
+    },
+    {
+        "id": 7,
+        "src": "./gallery/slika_2.webp",
+        "path": "slika_2.jpg",
+        "title": "Chelsea",
+        "desc": "moja omiljena ekipa"
+    }
+]
