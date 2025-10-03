@@ -1,21 +1,23 @@
-import { useRef, useState } from 'react'
+import { useRef, useState, Suspense } from 'react'
+import React from 'react'
 import './App.css'
 import Login from './comp/login'
 import Welcome from './comp/welcome'
-import PictureFrame from './comp/picture_frame'
 import {motion, AnimatePresence} from 'framer-motion'
 import Life from './Life'
-import Inspiration from './Inspiration'
 import Views from './Views'
 import Select from './Selection'
-import { FaArrowRightFromBracket } from "react-icons/fa6";
-import Movie from './comp/movie'
-import FetchViews from './lib/fetchViews'
-import MyMovies from './Movies'
-import Games from './Games'
-import InfoPop from './comp/infopop'
-import Gallery from './Gallery'
-import AddMovie from './lib/addData'
+import Contact from './Contact'
+import Books from './Books'
+// import MyMovies from './Movies'
+// import Games from './Games'
+// import InfoPop from './comp/infopop'
+// import Gallery from './Gallery'
+
+const MyMovies = React.lazy(() => import('./Movies'));
+const Games = React.lazy(() => import('./Games'));
+const InfoPop = React.lazy(() => import('./comp/infopop'));
+const Gallery = React.lazy(() => import('./Gallery'));
 
 const sections = {
   selec: <Select/>,
@@ -24,6 +26,8 @@ const sections = {
   views: <Views/>,
   games: <Games/>,
   gallery: <Gallery/>,
+  contact: <Contact/>,
+  books: <Books/>
 };
 
 function App() {
@@ -46,6 +50,10 @@ function App() {
   }
 
   return (
+    // <div className='absolute top-0 left-0 w-full h-[100svh] flex justify-center items-center bg-gray-950'>
+    //   <Contact/>
+    // </div>
+    
     <div className='h-[100svh] bg-gray-950 w-[100%] flex justify-center items-center relative mainapp bg-img overflow-x-hidden' style={{backgroundImage: `${currentBackground ? "url('./bg_phone.webp')" : "none"}`, backgroundSize: "cover", backgroundPosition: "center"}}>  
     <Welcome/>
     <AnimatePresence>
@@ -62,7 +70,10 @@ function App() {
           exit={{ x: -300, opacity: 0 }}
           transition={{ duration: 0.5 }}
         >
-        {sections[section]}
+        <Suspense fallback={<div className='absolute top-0 left-0 w-full h-auto min-h-[100svh] flex justify-center items-center bg-gray-950 text-white text-3xl'>Loading...</div>}>
+          {sections[section]}
+        </Suspense>
+        
         </motion.div>
        )}
     </AnimatePresence>

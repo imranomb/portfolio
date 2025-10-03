@@ -42,7 +42,7 @@ const Select = forwardRef(({changeSection}, ref) => {
             <div className="flex gap-4 !justify-start items-start">
                 <SelectOption icon="./icons/steam.webp" title="Steam" page="games" function1={changeSection} function2={handleSectionChange}/>
                 <SelectOption icon="./icons/books.webp" title="Books" page="books" function1={changeSection} function2={handleSectionChange}/>
-                
+                <SelectOption icon="./icons/contact.webp" title="SMS" page="contact" function1={changeSection} function2={handleSectionChange}/>
             </div>
             </motion.div>
             

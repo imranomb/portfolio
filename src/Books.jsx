@@ -1,18 +1,18 @@
 import { useState, useEffect } from "react";
 import { useFetchData } from "./lib/fetchData";
 import { motion } from "framer-motion";
-import Movie from "./comp/movie";
+import Book from "./comp/book";
 
 export default function MyMovies()
 {
     const {
-        items: movies,
+        items: books,
         currentPage,
         totalPages,
         loading,
         initialize,
         goToPage
-    } = useFetchData("movies", 2, "pozicija");
+    } = useFetchData("books", 2, "pozicija");
     useEffect(() => {
         initialize(); // učitaj prvu stranicu
     }, [initialize]);
@@ -23,9 +23,10 @@ export default function MyMovies()
                 <img src="./spinner.svg" alt="Loading..." className="w-16 h-16"/>
             ) : (
                 <div className="flex flex-col items-center justify-center gap-4">
-                {movies.map((movie, i) => (
-                    <motion.div initial={{opacity: 0, y: 20}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: i * 0.2}} viewport={{once: true}} key={movie.id} className="w-[90vw] md:w-[60vw] lg:w-[40vw]">
-                        <Movie key={movie.id} pozicija={movie.pozicija} ime={movie.ime} cover={movie.cover} recenzija={movie.recenzija} ocjena={movie.ocjena} />
+                {books.map((book, i) => (
+                    console.log(book),
+                    <motion.div initial={{opacity: 0, y: 20}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: i * 0.2}} viewport={{once: true}} key={book.id} className="w-[90vw] md:w-[60vw] lg:w-[40vw]">
+                        <Book key={book.id} pozicija={book.pozicija} name={book.name} cover={book.cover} desc={book.desc} rating={book.rating} />
                     </motion.div>
                 ))}
                 </div>

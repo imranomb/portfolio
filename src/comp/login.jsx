@@ -33,7 +33,7 @@ export default function Login({start, changeBackground, changeErrorTrigger}) {
     }, []);
   return (
     <motion.div variants={{initial:{scale: 0}, firstAnim:{scale: 1, transition:{delay: 1.8, duration: 0.5}}, endAnim:{scale: 0, transition:{delay: 0, duration: 0.5}}}} initial="initial" animate={controls} className={`${isDisplayed ? "flex-col" : "hidden"}`}>
-        <span className="text-white font-bold"><span className="text-amber-300 font-bold">honey,</span> what is your name?</span>
+        <span className="text-white font-bold"><span className="text-amber-300 font-bold">hey,</span> what is your name?</span>
         <form className="flex flex-col gap-4">
             <input style={{padding: "10px"}} className="border-white border-2 rounded-md text-xl text-white bg-gray-800"
             type="text"

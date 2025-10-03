@@ -29,6 +29,14 @@
   .selectionbutton {
     @apply !p-5 text-center bg-blue-950 text-white font-bold  hover:bg-white hover:text-black duration-300 ease-in cursor-pointer;
   }
+  .contact_div
+  {
+    @apply flex flex-col justify-start items-start gap-1 text-white;
+  }
+  .contact_input
+  {
+    @apply bg-gray-400 text-gray-800 border-2 border-gray-600 !p-4 min-w-3xs;
+  }
 }
 @layer utilities
 {
